@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    .main{
+        /* i can use this to style as well and it will center all the contain of main */
+        /* position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%); */
+            margin: 200px auto 0;
+            border: 2px solid red;
+            width: 50%;
+            text-align: center;
+            /* color: #dbdbdb; */
+
+
+    }
+    .password-container{
+        margin-top: 25px;
+        background-color: #f1f1f1;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 15px 15px 0 0 rgba(0, 0, 0, .10);
+    }
+    .password{
+        margin: 25px 0;
+        position: relative;
+        
+    }
+    
+}
+input {
+    /* width: calc(100% - (24px + 1rem)); */
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        color: rgba(0, 0, 0, .75);
+    }
+}
+span{
+    border: 1px solid black;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* background-image: url(./image/visibility_FILL0_wght400_GRAD0_opsz24.png); */
+    
+}
+
+button{
+    padding: 10px;
+    width: 50%;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #c2c2c2;
+    background-color: #6d6b6b;
+    color: #c2c2c2;
+    box-shadow: 15px 15px 0 0 rgba(0, 0, 0, .10);
+    cursor: pointer;
+    &:hover{
+        background-color: #9b9999;
+        color: #f1f1f1;
+    }
+}
+#error-message{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(236, 71, 71, 0.801);
+}

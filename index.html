@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show&hide password with submit</title>
+</head>
+<body>
+    <div class="main">
+        <h1>show/hide password</h1>
+        <h2>enter your password</h2>
+        <form id="formId" onsubmit="return validate()" action="./login.html">
+            <div class="password-container">
+                <div class="password" >
+                    <input type="password" name="" id="password"  placeholder="enter your password">
+                    <span id="icon"><img  src="./image/visibility_FILL0_wght400_GRAD0_opsz24.png" alt=""></span>
+                </div>
+                <div class="password">
+                    <input type="password" name="" id="cpassword"  placeholder="enter your password again">
+                    <span ><img src="./image/visibility_FILL0_wght400_GRAD0_opsz24.png" alt=""></span>
+    
+                </div>
+                <p id="error-message"></p>
+            </div>
+            <button type="submit" id="submit" >register</button>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
